@@ -1,0 +1,44 @@
+{
+    "name": "mini-bank",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+        "format": "prettier --write .",
+        "lint": "solhint 'contracts/**/*.sol'",
+        "test": "hardhat test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "@types/node": "^20.19.25",
+        "hardhat": "^2.27.0",
+        "prettier": "^3.6.2",
+        "prettier-plugin-solidity": "^1.4.3",
+        "solhint": "^4.5.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.4.0"
+    },
+    "prettier": {
+        "singleQuote": false,
+        "printWidth": 100,
+        "tabWidth": 4,
+        "plugins": [
+            "prettier-plugin-solidity"
+        ],
+        "overrides": [
+            {
+                "files": "*.sol",
+                "options": {
+                    "parser": "solidity-parse"
+                }
+            }
+        ]
+    }
+}
